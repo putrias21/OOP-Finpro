@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.stefano.mazesolver.MazeSolverGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="16" left="16" bottom="16" right="16"/>
+    <constraints>
+      <xy x="20" y="20" width="498" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="24dd8" class="javax.swing.JLabel" binding="labelSize">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Maze size: "/>
+        </properties>
+      </component>
+      <component id="9cb58" class="javax.swing.JTextField" binding="sizeInput">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a5e09" class="javax.swing.JLabel" binding="labelMethod">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Algorithm: "/>
+        </properties>
+      </component>
+      <component id="62557" class="javax.swing.JRadioButton" binding="dfs">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="Depth First Search"/>
+        </properties>
+      </component>
+      <component id="80263" class="javax.swing.JRadioButton" binding="bfs">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="false"/>
+          <text value="Breadth First Search"/>
+        </properties>
+      </component>
+      <component id="794c9" class="javax.swing.JButton" binding="btnRun">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Generate New Maze and Solve"/>
+        </properties>
+      </component>
+      <grid id="a924f" binding="mazePanel" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="172c1" class="javax.swing.JButton" binding="btnRepeat">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Repeat with Current Maze"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
